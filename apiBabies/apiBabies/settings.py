@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'babies.apps.BabiesConfig',
-    'events.apps.EventsConfig'
+    'events.apps.EventsConfig',
+    'parents.apps.ParentsConfig'
 ]
 
 MIDDLEWARE = [
