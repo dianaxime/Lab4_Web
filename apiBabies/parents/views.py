@@ -7,10 +7,10 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 
 from permissions.services import APIPermissionClassFactory
-from events.models import Event
-from events.serializers import EventSerializer
+from parents.models import Parent
+from parents.serializers import ParentSerializer
 
 class ParentViewSet(viewsets.ModelViewSet):
-    queryset = Event.objects.all()
-    serializer_class = EventSerializer
+    queryset = Parent.objects.all()
+    serializer_class = ParentSerializer
     

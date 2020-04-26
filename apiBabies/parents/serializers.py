@@ -7,6 +7,6 @@ class ParentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Parent
         fields = (
-            'username',
-            'firstname'
+            'id',
+            'user_id'
         )
