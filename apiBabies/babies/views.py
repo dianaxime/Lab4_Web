@@ -9,6 +9,8 @@ from rest_framework.response import Response
 from permissions.services import APIPermissionClassFactory
 from babies.models import Baby
 from babies.serializers import BabySerializer
+from events.models import Event
+from events.serializers import EventSerializer
 
 class BabyViewSet(viewsets.ModelViewSet):
     queryset = Baby.objects.all()
@@ -41,4 +43,9 @@ class BabyViewSet(viewsets.ModelViewSet):
         assign_perm('babies.change_baby', user, baby)
         assign_perm('babies.view_baby', user, baby)
         return Response(serializer.data)
+
+    @action(detail=True, methods=['get'])
+    def events(self, request, pk=None):
+        baby = self.get_object()
+        return Response([EventSerializer(event).data for event in Event.objects.filter(babyId=baby)])
 

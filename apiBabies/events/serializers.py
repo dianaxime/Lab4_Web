@@ -4,6 +4,7 @@ from events.models import Event
 from babies.serializers import BabySerializer
 
 class EventSerializer(serializers.ModelSerializer):
+    
     class Meta:
         model = Event
         fields = (
@@ -13,3 +14,4 @@ class EventSerializer(serializers.ModelSerializer):
             'eventDate',
             'babyId'
         )
+    

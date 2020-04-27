@@ -10,6 +10,7 @@ from permissions.services import APIPermissionClassFactory
 from events.models import Event
 from events.serializers import EventSerializer
 
+
 class EventViewSet(viewsets.ModelViewSet):
     queryset = Event.objects.all()
     serializer_class = EventSerializer
@@ -36,7 +37,19 @@ class EventViewSet(viewsets.ModelViewSet):
     )
 
     def perform_create(self, serializer):
-        event = serializer.save()
+        babyId = serializer.validated_data["babyId"]
         user = self.request.user
-        assign_perm('events.change_event', user, event)
-        return Response(serializer.data)
+        userId = str(user.id)
+        babyId = str(babyId)
+        if babyId == userId:
+            event = serializer.save()
+            assign_perm('events.change_event', user, event)
+            assign_perm('events.view_event', user, event)
+            return Response(serializer.data)
+        else:
+            return Response({
+                'ERROR': 'Usted no es el padre de ese bebe'
+            })
+
+
+        

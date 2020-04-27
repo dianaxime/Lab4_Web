@@ -14,4 +14,4 @@ class Baby(models.Model):
     )
 
     def __str__(self):
-        return self.babyName
+        return str(self.parent.user_id)

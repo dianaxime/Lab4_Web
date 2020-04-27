@@ -9,6 +9,9 @@ from django.dispatch import receiver
 class Parent(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.id
+
 @receiver(post_save, sender=User)
 def create_user_parent(sender, instance, created, **kwargs):
     if created:
