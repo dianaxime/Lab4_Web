@@ -15,12 +15,12 @@
 					"formdata": [
 						{
 							"key": "username",
-							"value": "dele18607",
+							"value": "raul1977",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "12345",
+							"value": "24680",
 							"type": "text"
 						}
 					]
@@ -52,12 +52,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk2MTE1MiwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTU3NTUyfQ.KSpskNseiQkYKKqP6NlTJxMB6gyzAO_k6mXHVDV_nsw",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJ1c2VybmFtZSI6InJhdWwxOTc3IiwiZXhwIjoxNTg4MDAzODAxLCJlbWFpbCI6InJhdWwxOTc3QGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODgwMDAyMDF9.uh-dcF0Xf1IDkZoX8JnqU107t8ncHw3lILAC3QiQVbQ",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/parents/1/babies/",
+					"raw": "http://127.0.0.1:8000/api/v1/parents/4/babies/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -70,7 +70,7 @@
 						"api",
 						"v1",
 						"parents",
-						"1",
+						"4",
 						"babies",
 						""
 					]
@@ -85,12 +85,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJ1c2VybmFtZSI6Im1hZmlzYTcxIiwiZXhwIjoxNTg3OTQzOTM4LCJlbWFpbCI6Im1hZmlzYTcxQGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODc5NDAzMzh9.WNyKy7R-WnilSSu5PNFHy2shfTqSXcPwQd5rX3FFc2I",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJ1c2VybmFtZSI6InJhdWwxOTc3IiwiZXhwIjoxNTg4MDAzODAxLCJlbWFpbCI6InJhdWwxOTc3QGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODgwMDAyMDF9.uh-dcF0Xf1IDkZoX8JnqU107t8ncHw3lILAC3QiQVbQ",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/babies/b6/",
+					"raw": "http://127.0.0.1:8000/api/v1/babies/5/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -103,7 +103,7 @@
 						"api",
 						"v1",
 						"babies",
-						"b6",
+						"5",
 						""
 					]
 				}
@@ -117,12 +117,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJ1c2VybmFtZSI6InJhdWwxOTc3IiwiZXhwIjoxNTg4MDAzODAxLCJlbWFpbCI6InJhdWwxOTc3QGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODgwMDAyMDF9.uh-dcF0Xf1IDkZoX8JnqU107t8ncHw3lILAC3QiQVbQ",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/babies/b1/",
+					"raw": "http://127.0.0.1:8000/api/v1/babies/4/events/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -135,7 +135,8 @@
 						"api",
 						"v1",
 						"babies",
-						"b1",
+						"4",
+						"events",
 						""
 					]
 				}
@@ -149,7 +150,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJ1c2VybmFtZSI6InJhdWwxOTc3IiwiZXhwIjoxNTg4MDAzODAxLCJlbWFpbCI6InJhdWwxOTc3QGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODgwMDAyMDF9.uh-dcF0Xf1IDkZoX8JnqU107t8ncHw3lILAC3QiQVbQ",
 						"type": "text"
 					}
 				],
@@ -157,23 +158,18 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "eventId",
-							"value": "e9",
-							"type": "text"
-						},
-						{
 							"key": "eventType",
-							"value": "popo",
+							"value": "pipi",
 							"type": "text"
 						},
 						{
 							"key": "eventNotes",
-							"value": "huele mal",
+							"value": "bazinica",
 							"type": "text"
 						},
 						{
 							"key": "babyId",
-							"value": "b4",
+							"value": "5",
 							"type": "text"
 						}
 					]
@@ -205,12 +201,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJ1c2VybmFtZSI6InJhdWwxOTc3IiwiZXhwIjoxNTg4MDAzODAxLCJlbWFpbCI6InJhdWwxOTc3QGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODgwMDAyMDF9.uh-dcF0Xf1IDkZoX8JnqU107t8ncHw3lILAC3QiQVbQ",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/events/e9/",
+					"raw": "http://127.0.0.1:8000/api/v1/events/5/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -223,7 +219,7 @@
 						"api",
 						"v1",
 						"events",
-						"e9",
+						"5",
 						""
 					]
 				}
@@ -237,7 +233,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk2MTE1MiwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTU3NTUyfQ.KSpskNseiQkYKKqP6NlTJxMB6gyzAO_k6mXHVDV_nsw",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJ1c2VybmFtZSI6InJhdWwxOTc3IiwiZXhwIjoxNTg4MDAzODAxLCJlbWFpbCI6InJhdWwxOTc3QGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODgwMDAyMDF9.uh-dcF0Xf1IDkZoX8JnqU107t8ncHw3lILAC3QiQVbQ",
 						"type": "text"
 					}
 				],
@@ -245,13 +241,8 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "babyId",
-							"value": "b7",
-							"type": "text"
-						},
-						{
 							"key": "babyName",
-							"value": "Angel",
+							"value": "Fabian",
 							"type": "text"
 						},
 						{
@@ -261,7 +252,7 @@
 						},
 						{
 							"key": "parent",
-							"value": "1",
+							"value": "4",
 							"type": "text"
 						}
 					]
@@ -293,12 +284,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJ1c2VybmFtZSI6InJhdWwxOTc3IiwiZXhwIjoxNTg4MDAzODAxLCJlbWFpbCI6InJhdWwxOTc3QGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODgwMDAyMDF9.uh-dcF0Xf1IDkZoX8JnqU107t8ncHw3lILAC3QiQVbQ",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/v1/parents/1/",
+					"raw": "http://127.0.0.1:8000/api/v1/parents/4/",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -311,7 +302,7 @@
 						"api",
 						"v1",
 						"parents",
-						"1",
+						"4",
 						""
 					]
 				}

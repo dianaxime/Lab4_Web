@@ -12,6 +12,9 @@ from babies.serializers import BabySerializer
 from events.models import Event
 from events.serializers import EventSerializer
 
+def evaluar(user, obj, request):
+    return user.id == obj.parent.user_id
+
 class BabyViewSet(viewsets.ModelViewSet):
     queryset = Baby.objects.all()
     serializer_class = BabySerializer
@@ -21,14 +24,14 @@ class BabyViewSet(viewsets.ModelViewSet):
             permission_configuration={
                 'base': {
                     'create': True,
-                    'list': True,
+                    'list': False,
                 },
                 'instance': {
                     'retrieve': 'babies.view_baby',
                     'destroy': False,
                     'update': True,
                     'partial_update': 'babies.change_baby',
-                    #'notify': evaluar_notify,
+                    'events': evaluar,
                     # 'update_permissions': 'users.add_permissions'
                     # 'archive_all_students': phase_user_belongs_to_school,
                     # 'add_clients': True,

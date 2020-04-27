@@ -20,12 +20,12 @@ class EventViewSet(viewsets.ModelViewSet):
             permission_configuration={
                 'base': {
                     'create': True,
-                    'list': True,
+                    'list': False,
                 },
                 'instance': {
                     'retrieve': 'events.view_event',
                     'destroy': False,
-                    'update': True,
+                    'update': False,
                     'partial_update': 'events.change_event',
                     #'notify': evaluar_notify,
                     # 'update_permissions': 'users.add_permissions'

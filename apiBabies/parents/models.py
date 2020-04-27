@@ -10,7 +10,7 @@ class Parent(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 @receiver(post_save, sender=User)
 def create_user_parent(sender, instance, created, **kwargs):
