@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "43fc49d2-f0d0-4cb4-b88c-09b1fa4a1871",
+		"name": "Lab4_Web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LogIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "dele18607",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/token-auth/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"token-auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "parentIdBabies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk2MTE1MiwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTU3NTUyfQ.KSpskNseiQkYKKqP6NlTJxMB6gyzAO_k6mXHVDV_nsw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/parents/1/babies/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"parents",
+						"1",
+						"babies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "babiesId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJ1c2VybmFtZSI6Im1hZmlzYTcxIiwiZXhwIjoxNTg3OTQzOTM4LCJlbWFpbCI6Im1hZmlzYTcxQGhvdG1haWwuY29tIiwib3JpZ19pYXQiOjE1ODc5NDAzMzh9.WNyKy7R-WnilSSu5PNFHy2shfTqSXcPwQd5rX3FFc2I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/babies/b6/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"babies",
+						"b6",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "babiesIdEvents",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/babies/b1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"babies",
+						"b1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "events",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "eventId",
+							"value": "e9",
+							"type": "text"
+						},
+						{
+							"key": "eventType",
+							"value": "popo",
+							"type": "text"
+						},
+						{
+							"key": "eventNotes",
+							"value": "huele mal",
+							"type": "text"
+						},
+						{
+							"key": "babyId",
+							"value": "b4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/events/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eventsId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/events/e9/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"events",
+						"e9",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "babies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk2MTE1MiwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTU3NTUyfQ.KSpskNseiQkYKKqP6NlTJxMB6gyzAO_k6mXHVDV_nsw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "babyId",
+							"value": "b7",
+							"type": "text"
+						},
+						{
+							"key": "babyName",
+							"value": "Angel",
+							"type": "text"
+						},
+						{
+							"key": "babyLastname",
+							"value": "de Leon",
+							"type": "text"
+						},
+						{
+							"key": "parent",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/babies/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"babies",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "parentId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6ImRlbGUxODYwNyIsImV4cCI6MTU4Nzk3MzEzOCwiZW1haWwiOiJkZWxlMTg2MDdAdXZnLmVkdS5ndCIsIm9yaWdfaWF0IjoxNTg3OTY5NTM4fQ.ferk5_VzgRl2gxWksG_azf7nLxS8SdigDC4jRhYrFzU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/parents/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"parents",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
